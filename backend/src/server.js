@@ -9,9 +9,8 @@ mongoose.connect('mongodb+srv://mayconbj:mpee123cao456@aircnc-uzq9b.mongodb.net/
 useUnifiedTopology: true
 })
 
-
 app.use(express.json()) //seta o body como JSON
-app.use(routes)
+app.use(routes) //define as rotas
 
 app.listen(3333) //porta onde vai acessar o app
 
