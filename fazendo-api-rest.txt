@@ -1,0 +1,15 @@
+FAZENDO A API REST
+yarn init -y //inicia o yarn no projeto
+yarn add express //adiciona a dependencia express
+EXPRESS
+micro framework 
+node 'nome_arquivo_do_server' //roda o arquivo do servidor
+yarn add nodemon -d //flag -d é pra ser utilizado apenas em ambiente de desenvolvimento 
+nodemon faz o servidor atualizar sozinho 
+
+add mongoose //ajuda a manipular os dados no mongoDB
+
+MVC
+
+models = são os modelos de dados da aplicação
+controlles = colocar as regras de negócio da aplicação, recebe a requisição, trata a requisição e dá uma resposta
