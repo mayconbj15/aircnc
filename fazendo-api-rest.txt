@@ -9,7 +9,12 @@ nodemon faz o servidor atualizar sozinho
 
 add mongoose //ajuda a manipular os dados no mongoDB
 
-MVC
+*MVC
 
 models = são os modelos de dados da aplicação
 controlles = colocar as regras de negócio da aplicação, recebe a requisição, trata a requisição e dá uma resposta
+*metodos do controller
+
+ "scripts": {
+    "dev": "nodemon src/server.js"
+  },
