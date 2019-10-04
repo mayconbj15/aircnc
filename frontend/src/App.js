@@ -4,7 +4,6 @@ import './App.css';
 
 import logo from './assets/logo.svg';
 
-import routes from './services/routes'
 import Routes from './services/routes';
 
 function App() {

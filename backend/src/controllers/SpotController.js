@@ -19,13 +19,16 @@ module.exports = {
 
         if(!user)
             return res.status(400).json({ error: 'Usuário não existe'})
-        const spot = await Spot.create({
+
+        console.log('deu bao carai')
+        const spot = await Spot.create({            
             user: user_id,
             thumbnail: filename,
             company,
             techs: techs.split(',').map(tech => tech.trim()),
             price
         })
+        
         
         return res.json(spot)
     }

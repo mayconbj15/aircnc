@@ -5,24 +5,25 @@ export default function Login({ history }){
     const [email, setEmail] = useState('')
 
     async function handleSubmit(event){
-        event.preventDefault()
+        event.preventDefault() // não recarrega a págica que é o padrão
     
         const response = await api.post('/sessions', { email })
     
         const { _id } = response.data;
     
-        localStorage.setItem('user', _id)
+        localStorage.setItem('user', _id) //salva na local storage
 
-        history.push('./dashboard')
+        history.push('./dashboard') // muda pra rota ./dashboard
     }
 
     return (    
         <>
         <p>
-        Ofereça <strong>spots</strong> para programadores e encontre <strong>talentos</strong> para sua empresa
+        Encontre os melhores butecos pra você tomar uma cangibrina
         </p>
         <form onSubmit={handleSubmit}>
             <label htmlFor="email">E-mail</label>
+            
             <input 
             type="email" 
             id="email" 
